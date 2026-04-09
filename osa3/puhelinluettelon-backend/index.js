@@ -7,6 +7,7 @@ app.use(cors());
 
 app.use(express.json());
 app.use(morgan("tiny"));
+app.use(express.static("dist"));
 
 let persons = [
   {
