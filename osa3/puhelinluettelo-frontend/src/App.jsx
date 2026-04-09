@@ -25,8 +25,6 @@ const App = () => {
       return;
     }
 
-    setPersons((prev) => [...prev, { name: newName, number: newNumber }]);
-
     personService
       .create({ name: newName, number: newNumber })
       .then((response) => {
